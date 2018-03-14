@@ -1,0 +1,35 @@
+<!DOCTYPE> 
+<html> 
+<head> 
+<title>Myimage</title> 
+<style type="text/css"> 
+    img{width:200px;height:128px;border:0;} 
+    .show{display:block;}
+    .hide{display:none;}
+</style> 
+</head> 
+<body> 
+
+    <img id="image01" src="HK (2).jpg" class="hide">  
+    <br/> 
+    <input type="button" onclick = "showImg()" value= "Show image"> 
+</body> 
+
+<script type="text/javascript">
+    function showImg(){
+    var obj=document.getElementById('image01');
+    obj.className = 'show';
+    var rand = Math.floor(Math.random() * Math.floor(100))
+    console.log(rand);
+    if(rand % 2 == 0){
+        obj.src = 'windows.jpg'
+    }
+   else{
+        obj.src = 'HK (2).jpg'
+   }
+
+   
+    
+    }
+</script>
+</html> 
